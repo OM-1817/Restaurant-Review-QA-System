@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 df = pd.read_csv("realistic_restaurant_reviews.csv")
-embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+embeddings = OllamaEmbeddings(model="bge-m3")
 
 db_location = "./chrome_langchain_db"
 add_documents = not os.path.exists(db_location)
