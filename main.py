@@ -15,7 +15,7 @@ prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model
 
 while True:
-    print("\n\n-------------------------------")
+    print("\n\n-----------------------------------")
     question = input("Ask your question (q to quit): ")
     print("\n\n")
     if question == "q":
